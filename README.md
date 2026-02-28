@@ -7,7 +7,7 @@
 <img width="1427" height="803" alt="xplor-shot" src="https://github.com/user-attachments/assets/c43ac10a-1ec2-4f37-8fb1-e059bcf83c0f" />
 </>
 
-> **This is a skill module** for the [xplor Production Agent Framework](https://github.com/amlitio/xplor). It plugs into the agent runtime as a deterministic, auditable, low-token capability.
+> **This is a skill module** for the [xplor Production Agent Framework](https://xplor.digital . It plugs into the agent runtime as a deterministic, auditable, low-token capability.
 
 ---
 
