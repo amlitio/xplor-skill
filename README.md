@@ -1,85 +1,121 @@
-# Xplor: Structured Cognition for AI Agents
+# 🚀 xplor — Production Agent Skill System for Real Work
 
-[![MCP Skill](https://img.shields.io/badge/MCP-Skill-orange)](https://mcpmarket.com/submit?type=skill)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+**xplor** is a modular AI agent skill framework designed to run deterministic, auditable, low-token workflows for real operational automation.
 
-**Xplor** is a Model Context Protocol (MCP) skill that transforms flat codebases, legal contracts, and documentation into interconnected knowledge graphs. It enables AI agents to move beyond "flat search" (Vector RAG) to **Relationship-Based Reasoning**.
-
----
-
-## Overview
-
-Most AI systems struggle with complex domains because they lack relational awareness. Xplor injects **structure, meaning, and traceability** into the AI's context window, enabling:
-
-- **Traceability**: Audit how your AI navigates dependencies with built-in scoring
-- **Context Density**: Use "Progressive Disclosure" to prevent AI context collapse in large repositories
-- **High-Stakes Mapping**: Optimized for complex industries including Construction (AIA A201) and Legal Compliance (FS 218.755)
+It transforms LLM agents from chat assistants into production execution systems.
 
 ---
 
-## Quick Start
+## ⚡ What Problem xplor Solves
 
-### 1. Installation
+Most AI agents fail in production because they:
 
-Clone the repository and install the core engine locally:
+- hallucinate decisions
+- lack workflow control
+- become expensive at scale
+- cannot be audited
+- break under real documents and operations
+
+**xplor introduces structured execution instead of prompt chaos.**
+
+---
+
+## 🧠 Core Idea
+
+AI decides **what** should happen.
+
+xplor controls **how** it safely happens.
+
+| Layer | Responsibility |
+|------|---------------|
+| Agent | Reasoning |
+| Skills | Deterministic execution |
+| Workflow | State control |
+| Database | Audit & truth |
+
+---
+
+## 🏗 Architecture
+
+
+AI Agent (Claude / GPT)
+│
+▼
+Skill Selection Layer
+│
+┌──────┼────────┐
+│ │ │
+Extract Validate Rate
+│ │ │
+└── Workflow State Machine ──┘
+│
+▼
+Audit + Database
+│
+External Systems
+
+
+---
+
+## ✅ Key Features
+
+### Modular Skill System
+- Plug-and-play agent capabilities
+- Dynamically loaded skills
+- YAML-defined permissions
+- Replaceable execution modules
+
+---
+
+### Workflow State Machine
+
+Production-safe execution pipeline:
+
+
+pending_extract
+→ pending_validate
+→ pending_rate
+→ pending_post
+→ completed
+
+
+No uncontrolled agent behavior.
+
+---
+
+### Low Token Architecture
+
+xplor minimizes AI cost by:
+
+- moving logic outside prompts
+- structured execution
+- AI invoked only when required
+
+Target automation cost:
+
+**< 3% of operational revenue**
+
+---
+
+### Full Auditability
+
+Every execution records:
+
+- inputs
+- outputs
+- decisions
+- exceptions
+- execution history
+
+Enterprise-ready transparency.
+
+---
+
+## 🚀 Quick Start
+
+### Clone Repository
 
 ```bash
 git clone https://github.com/amlitio/xplor-skill.git
-cd xplor-skill
-pip install -e .
-```
+cd xplor
 
-### 2. Map Your Project
-
-Generate a "Cognitive Summary" of your current directory:
-
-```bash
-xplor map
-```
-
-### 3. Visualize Cognition
-
-Open the generated `xplor_graph.json` file in the Xplor Digital Explorer to visualize your functional "synapses" in 3D.
-
----
-
-## Repository Structure
-
-| Directory | Purpose |
-|-----------|---------|
-| `xplor/SKILL.md` | MCP entry point with automated triggers |
-| `xplor/references/` | Deep-logic modules for Code Mode and Document Mode |
-| `xplor/scripts/` | Tools for Traceability Audits and graph validation |
-| `src/xplor_cli/` | Core Python engine for static analysis and extraction |
-
----
-
-## Contributing
-
-Xplor is an evolving "Cognitive Infrastructure" layer. We welcome contributions that expand the engine's reach:
-
-### Contribution Areas
-
-- **New Modes**: Build specialized mapping for Medical (HIPAA), Finance (SEC), or other complex regulatory domains
-- **Graph Logic**: Improve `score_graph.py` logic to detect logical contradictions in large-scale documentation
-- **UI/UX**: Enhance `xplor-explorer.jsx` for more intuitive 3D relationship mapping
-
-For style guides and PR processes, see **CONTRIBUTING.md** (coming soon).
-
----
-
-## Business & Enterprise
-
-Xplor is built by **RIDIS LLC**. While the CLI and Skill are open-source, we offer enterprise-grade features via our cloud platform:
-
-- **Cloud Sync**: Securely store and version your knowledge graphs
-- **Multi-Domain Fusion**: Combine code graphs with business logic and legal requirements
-- **Advanced Analytics**: Scalable reasoning for 10,000+ node environments
-
-Visit [Xplor.digital](https://xplor.digital) to learn more.
-
----
-
-## License
-
-Licensed under the MIT License. See [LICENSE](LICENSE) for details.
