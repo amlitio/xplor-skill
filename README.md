@@ -23,14 +23,18 @@ Clone the repo and install the core engine locally:
 git clone [https://github.com/amlitio/xplor-skill.git](https://github.com/amlitio/xplor-skill.git)
 cd xplor-skill
 pip install -e .
+```
 
 2. Map Your Project
 Generate a "Cognitive Summary" of your current directory:
 
-Bash
+```bash
 xplor map
+```
+
 3. Visualize Cognition
 Open the xplor_graph.json in the Xplor Digital Explorer to see your functional "synapses" in 3D.
+
 
 📂 Repository Structure
 xplor/SKILL.md: The MCP entry point with automated triggers.
@@ -40,6 +44,7 @@ xplor/references/: Deep-logic modules for Code Mode and Document Mode.
 xplor/scripts/: Tools for Traceability Audits and graph validation.
 
 src/xplor_cli/: The core Python engine for static analysis and extraction.
+
 
 🤝 Community & Contributions
 Xplor is an evolving "Cognitive Infrastructure" layer. We welcome contributions that expand the engine's reach:
@@ -52,6 +57,7 @@ UI/UX: Contribute to the xplor-explorer.jsx to make 3D relationship mapping even
 
 Check out CONTRIBUTING.md (coming soon) for style guides and PR processes.
 
+
 💰 Business & Enterprise
 Xplor is built by RIDIS LLC. While the CLI and Skill are open-source, we offer enterprise-grade features via our cloud platform:
 
@@ -60,5 +66,9 @@ Cloud Sync: Securely store and version your knowledge graphs.
 Multi-Domain Fusion: Combine code graphs with business logic and legal requirements.
 
 Advanced Analytics: Scalable reasoning for 10,000+ node environments.
+
+.
+.
+.
 
 Visit Xplor.digital to learn more.
