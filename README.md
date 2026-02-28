@@ -321,7 +321,7 @@ MIT — see [LICENSE](LICENSE) for full terms.
 
 ## Related
 
-- **[xplor Framework](https://github.com/amlitio/xplor)** — The production agent runtime this skill plugs into
+- **[xplor Framework](https://xplor.digital)** — The production agent runtime this skill plugs into
 - **Explorer UI** — Interactive graph visualization bundled in `xplor/assets/xplor-explorer.jsx`
 - **MCP Adapter** — Expose extracted graphs to other AI agents via `references/mcp-server-spec.md`
 
